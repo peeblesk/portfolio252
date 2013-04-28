@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<body>
+<head>
+<style type="text/css">
+</style>
+
+
+
+252 Contents Review
+</head>
+
+
+<td> <font size= 5%>
+	<tr><p><pre>  <a href="#Arrays" title="everything I know" alt="aw shucks">Arrays</a>  <a href="#Event"title="everything I know" alt="aw shucks"> Event Handlers </a>  <a href="#Objects"title="everything I know" alt="aw shucks">Objects</a>  <a href="#console.log"> Console.Log</a>   <a href="#For">For Loops</a>    <a href="#While">While Loops</a>   <a href="#date"> Date Ojects</a>  </pre> </p></tr> 
+	</td>
+</table>
+</font>
+
+
+<a href=https://www.youtube.com/watch?v=laFZo2heSsk>High school and programming</a>
+<embed src=http://youtu.be/I4drUmu89es>
+<h2><a id="Arrays"> Arrays</a></h2> 
+<p>This chapter explains ba bla bla</p>
+
+<h2><a id="Objects"> <a href= http://www.w3schools.com/js/js_objects.asp> Objects</a></a></h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2><a id="While"><a href= http://www.w3schools.com/js/js_loop_while.asp>While Loops</a></a></h2>
+<p>while(somelimit){ somecode}; 
+<br> DO WHILE (runs code then tests a condition, useful if number of loop times is unknown): </br>
+<br> EXAMPLE:</br>
+<br>var x= 5;</br>
+<br>do{ </br>
+<br>document.write( x + “lala” );</br>
+<br>} while (x<=10);</br>
+<br>------ 5 lala, 6 lala, 7 lala…. </br>
+</p>
+
+
+<h2><a id="For">For Loops</a></h2>
+<p><br>for (var i=0;i<cars.length;i++)</br>
+<br>{ </br>
+<br>document.write(cars[i] + "<br>");</br>
+<br>}</br>
+<br></br>
+<br>increment types: </br>
+<br>i++, i--, i+=x, i-=x </br>
+</p>
+
+<h2><a id="Event"> Event Handlers </a> </h2>
+<p>a bit of code that reacts to user activity</p>
+
+<h2><a id="console.log"> Console.Log </a></h2>
+<p>
+<br> console.log(“something”); this function is an operator or printer, you can use comparisons or put it in if statements:</br>
+<br>if ( 1 < 2 )</br>
+<br>{</br>
+    <br>console.log("You are good at math!");</br>
+
+<br>else</br>
+<br>(“somecode”);</br>
+ <br>} </br>
+</p>
+
+<h2>Geolocation HTML5</h2>
+<p id="geo"> We'll see what happens..: </p>
+<button onclick="getLocation()"> oh dear </button> 
+<script type="javascript/text">
+var x = document.getElementById("geo");
+function getLocation()
+	{
+	if (navigator.geolocation)
+		{
+		navigator.geolocation.getCurrentPosition(showPosition);
+		}
+	else{alert("You shit is broke, dog.");}
+function showPosition(position)
+	{
+	alert("Latitude:" + position.coords.latitude + "<br>Longitude" + position.coords.longitude);
+	}};
+</script>
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2><a id= "date">Date Object</a></h2>
+<p>This chapter will tell time/date..</p>
+<body>
+
+<script>
+
+var d=new Date();
+document.write(d);
+</script>
+
+</body>
+
+<script>
+
+
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout(function(){startTime()},500);
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+
+
+
+div id="txt"></div>
+</body>
+</p>
+
+</script>
+<h2><a id="C10">Chapter 10</a></h2>
+<p>This chapter explains ba bla bla</p>
+<script>
+var today = new Date();
+var d1 = today.getHours();
+var d2 = today.getMinutes();
+var d3 = today.getSeconds();
+today.setDate(today.getDate());
+alert("Time is " + d1 + ":" + d2 + ":" + d3);
+</script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
